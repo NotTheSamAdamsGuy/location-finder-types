@@ -1,0 +1,14 @@
+{
+  "name": "location-finder-types",
+  "version": "0.0.0",
+  "description": "A collection of common TypeScript types used across various location-finder packages",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Koch",
+  "license": "none",
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16"
+  }
+}
