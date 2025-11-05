@@ -1,6 +1,7 @@
 {
-  "name": "location-finder-types",
+  "name": "@notthessamaadamsguy/location-finder-types",
   "version": "0.0.0",
+  "repository": "https://github.com/notthesamadamsguy/location-finder-types.git",
   "description": "A collection of common TypeScript types used across various location-finder packages",
   "main": "index.ts",
   "scripts": {
