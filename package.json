@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "repository": "https://github.com/notthesamadamsguy/location-finder-types.git",
   "description": "A collection of common TypeScript types used across various location-finder packages",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
