@@ -1,6 +1,7 @@
 import { Feature, FeatureCollection } from "geojson";
 
 export interface LocationFeature extends Feature {
+  id: string;
   properties: {
     name: string;
     description: string;
