@@ -1,18 +1,28 @@
 {
-  "name": "@notthessamaadamsguy/location-finder-types",
+  "name": "@notthesamadamsguy/location-finder-types",
   "version": "0.0.0",
-  "repository": "https://github.com/notthesamadamsguy/location-finder-types.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notthesamadamsguy/location-finder-types.git"
+  },
   "description": "A collection of common TypeScript types used across various location-finder packages",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc --declaration"
   },
   "author": "Jim Koch",
   "license": "none",
   "devDependencies": {
-    "@types/geojson": "^7946.0.16"
+    "@types/geojson": "^7946.0.16",
+    "typescript": "^5.9.3"
   }
 }
