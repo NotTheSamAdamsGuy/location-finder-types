@@ -22,6 +22,7 @@ export interface LocationFeature extends Feature {
     };
     images?: LocationImage[];
     tags?: string[];
+    displayOnSite: boolean;
   };
 }
 
