@@ -1,6 +1,11 @@
 import { Feature, FeatureCollection } from "geojson";
 
-export interface LocationFeature extends Feature {
+export type Coordinates = {
+  latitude: number;
+  longitude: number;
+};
+
+export type LocationFeature = Feature & {
   id: string;
   properties: {
     name: string;
@@ -24,14 +29,26 @@ export interface LocationFeature extends Feature {
     tags?: string[];
     displayOnSite: boolean;
   };
-}
+};
 
-export interface LocationFeatureCollection extends FeatureCollection {
+export type LocationFeatureCollection = FeatureCollection & {
   features: LocationFeature[];
-}
+};
 
-export interface LocationImage {
+export type LocationImage = {
   originalFilename: string;
   filename: string;
   description?: string;
-}
+};
+
+export type UserProfile = {
+  username: string;
+  firstName: string;
+  lastName: string;
+  role: "USER" | "ADMIN";
+};
+
+export type User = UserProfile & {
+  password: string | null;
+  lastLoginTimestamp: number;
+};
