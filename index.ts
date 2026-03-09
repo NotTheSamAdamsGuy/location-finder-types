@@ -40,6 +40,7 @@ export type LocationImage = {
   originalFilename: string;
   filename: string;
   description?: string;
+  url?: string;
 };
 
 type MapboxContextBase = {
